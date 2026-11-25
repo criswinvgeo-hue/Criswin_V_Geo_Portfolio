@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b16">
+  <title>Criswin V Geo | AI & Data Science Student</title>
+  <meta name="description" content="Portfolio of Criswin V Geo — B.Tech Artificial Intelligence and Data Science student, aspiring AI developer and creative technologist.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold:#e4bc54; --navy:#050b16; --panel:#0b1830; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--navy); color:#f8fafc; font-family:Inter,sans-serif; overflow-x:hidden; }
+    .display { font-family:"Space Grotesk",sans-serif; }
+    .mono { font-family:"JetBrains Mono",monospace; }
+    .grid-bg { background-image:linear-gradient(rgba(228,188,84,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(228,188,84,.045) 1px,transparent 1px);background-size:48px 48px; }
+    .gold-text { background:linear-gradient(120deg,#fff1b8,#e4bc54 55%,#a77b20);-webkit-background-clip:text;background-clip:text;color:transparent; }
+    .glass { background:linear-gradient(145deg,rgba(17,36,69,.78),rgba(7,16,34,.9));border:1px solid rgba(228,188,84,.18);backdrop-filter:blur(14px);box-shadow:0 18px 50px rgba(0,0,0,.25); }
+    .card { transition:transform .25s,border-color .25s,box-shadow .25s; }
+    .card:hover { transform:translateY(-5px);border-color:rgba(228,188,84,.6);box-shadow:0 18px 45px rgba(0,0,0,.35); }
+    .orbit { border:1px solid rgba(228,188,84,.18);border-radius:50%;position:absolute;inset:0;animation:spin 35s linear infinite; }
+    .orbit:after { content:"";position:absolute;width:9px;height:9px;background:#e4bc54;border-radius:50%;top:12%;left:15%;box-shadow:0 0 18px #e4bc54; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .float { animation:float 5s ease-in-out infinite; }
+    @keyframes float { 50% { transform:translateY(-9px); } }
+    .reveal { opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s; }
+    .reveal.show { opacity:1;transform:translateY(0); }
+    a:focus-visible,button:focus-visible { outline:2px solid var(--gold);outline-offset:4px; }
+    ::selection { background:#e4bc54;color:#050b16; }
+    @media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation:none!important;scroll-behavior:auto!important;transition:none!important; } .reveal{opacity:1;transform:none;} }
+  </style>
+</head>
+<body class="antialiased">
+  <canvas id="particles" class="fixed inset-0 pointer-events-none opacity-40" aria-hidden="true"></canvas>
+  <div class="relative z-10">
+    <div class="border-b border-amber-300/10 bg-[#071022]/90 px-4 py-2">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-between gap-2 text-[11px] mono text-slate-400">
+        <span><span class="text-amber-300">●</span> PERSONAL PORTFOLIO</span>
+        <span>B.TECH AI &amp; DATA SCIENCE · 2026–2030</span>
+      </div>
+    </div>
+    <header class="sticky top-0 z-30 border-b border-amber-300/10 bg-[#050b16]/85 backdrop-blur-xl">
+      <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="#home" class="display font-bold tracking-wide text-lg">CVG<span class="text-amber-300">.</span></a>
+        <div class="hidden md:flex items-center gap-7 text-sm text-slate-300">
+          <a class="hover:text-amber-300" href="#about">About</a><a class="hover:text-amber-300" href="#skills">Skills</a>
+          <a class="hover:text-amber-300" href="#projects">Projects</a><a class="hover:text-amber-300" href="#journey">Journey</a>
+          <a class="hover:text-amber-300" href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="rounded-lg border border-amber-300/40 px-4 py-2 text-xs font-semibold text-amber-200 hover:bg-amber-300/10">Let's connect ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="grid-bg min-h-[82vh] flex items-center">
+        <div class="max-w-7xl mx-auto w-full px-5 py-20 grid lg:grid-cols-[1.3fr_.7fr] gap-12 items-center">
+          <div class="reveal">
+            <p class="mono text-xs tracking-[.25em] text-amber-300 mb-6">HELLO WORLD · I'M</p>
+            <h1 class="display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05]">Criswin<br><span class="gold-text">V Geo.</span></h1>
+            <h2 class="display text-xl sm:text-2xl text-slate-200 mt-7">AI &amp; Data Science Student <span class="text-amber-300">|</span> Creative Technologist</h2>
+            <p class="mt-5 max-w-2xl text-slate-400 leading-7">I’m a first-year B.Tech student exploring the intersection of Artificial Intelligence, software development, robotics and digital creativity. I love learning by building ideas into real projects.</p>
+            <div class="flex flex-wrap gap-3 mt-8">
+              <a href="#projects" class="rounded-lg bg-amber-300 px-5 py-3 text-sm font-bold text-slate-950 hover:bg-amber-200">Explore my work</a>
+              <a href="#contact" class="rounded-lg border border-slate-600 px-5 py-3 text-sm font-semibold hover:border-amber-300 hover:text-amber-200">Get in touch</a>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-9 text-[11px] mono text-slate-400">
+              <span class="rounded-full border border-slate-700 px-3 py-1">PYTHON</span><span class="rounded-full border border-slate-700 px-3 py-1">AI / ML</span><span class="rounded-full border border-slate-700 px-3 py-1">ROBOTICS</span><span class="rounded-full border border-slate-700 px-3 py-1">DESIGN</span>
+            </div>
+          </div>
+          <div class="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 float">
+            <div class="orbit"></div><div class="orbit" style="inset:16px;animation-direction:reverse;animation-duration:48s"></div>
+            <div class="absolute inset-10 rounded-full glass flex flex-col items-center justify-center text-center">
+              <div class="text-6xl mb-3">✦</div><div class="display text-4xl font-bold gold-text">AI<span class="text-white">&amp;</span>DS</div>
+              <div class="mono text-[10px] tracking-[.2em] text-slate-400 mt-3">BUILD · LEARN · CREATE</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="max-w-7xl mx-auto px-5 py-20">
+        <div class="reveal"><p class="mono text-xs text-amber-300 tracking-[.2em]">01 / ABOUT ME</p><h2 class="display text-3xl sm:text-4xl font-bold mt-3">Curious mind. <span class="gold-text">Builder's mindset.</span></h2></div>
+        <div class="grid md:grid-cols-[1.2fr_.8fr] gap-6 mt-9">
+          <div class="glass rounded-2xl p-7 reveal"><h3 class="display text-xl font-semibold mb-4">A little about me</h3>
+            <p class="text-slate-400 leading-7">I’m <strong class="text-white">Criswin V Geo</strong>, a B.Tech Artificial Intelligence &amp; Data Science student at <strong class="text-white">Viswajyothi College of Engineering and Technology (VJCET)</strong>, Kerala.</p>
+            <p class="text-slate-400 leading-7 mt-4">My interests range from Python programming and AI-powered applications to robotics, web development, UI/UX and visual design. I’m motivated by the process of experimenting, solving problems and continuously improving.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 reveal">
+            <div class="glass rounded-2xl p-5"><div class="text-amber-300 text-2xl">01</div><p class="text-sm text-slate-300 mt-3">First-year</p><p class="text-xs text-slate-500 mt-1">B.Tech student</p></div>
+            <div class="glass rounded-2xl p-5"><div class="text-amber-300 text-2xl">AI</div><p class="text-sm text-slate-300 mt-3">Core field</p><p class="text-xs text-slate-500 mt-1">Artificial Intelligence</p></div>
+            <div class="glass rounded-2xl p-5"><div class="text-amber-300 text-2xl">4 yrs</div><p class="text-sm text-slate-300 mt-3">Degree journey</p><p class="text-xs text-slate-500 mt-1">2026–2030</p></div>
+            <div class="glass rounded-2xl p-5"><div class="text-amber-300 text-2xl">∞</div><p class="text-sm text-slate-300 mt-3">Curiosity</p><p class="text-xs text-slate-500 mt-1">Always learning</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="bg-[#071022]/65 border-y border-amber-300/10">
+        <div class="max-w-7xl mx-auto px-5 py-20">
+          <div class="reveal"><p class="mono text-xs text-amber-300 tracking-[.2em]">02 / INTERESTS &amp; SKILLS</p><h2 class="display text-3xl sm:text-4xl font-bold mt-3">What I'm exploring</h2><p class="text-slate-400 mt-3">A growing toolkit — learning through coursework, practice and projects.</p></div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-9">
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">⌘</div><h3 class="display font-semibold text-lg mt-4">Programming</h3><p class="text-sm text-slate-400 mt-2 leading-6">Python, programming fundamentals, algorithms and problem-solving.</p></article>
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">✧</div><h3 class="display font-semibold text-lg mt-4">AI &amp; Data Science</h3><p class="text-sm text-slate-400 mt-2 leading-6">Generative AI, computer vision, machine learning and data-driven ideas.</p></article>
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">⚙</div><h3 class="display font-semibold text-lg mt-4">Robotics</h3><p class="text-sm text-slate-400 mt-2 leading-6">Human-computer interaction, automation and intelligent systems.</p></article>
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">⌘</div><h3 class="display font-semibold text-lg mt-4">Web Development</h3><p class="text-sm text-slate-400 mt-2 leading-6">Building websites and learning front-end development workflows.</p></article>
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">◈</div><h3 class="display font-semibold text-lg mt-4">UI / UX &amp; Design</h3><p class="text-sm text-slate-400 mt-2 leading-6">Interface design, visual storytelling, graphics and creative layouts.</p></article>
+            <article class="glass card rounded-2xl p-6 reveal"><div class="text-2xl">♫</div><h3 class="display font-semibold text-lg mt-4">Creative Technology</h3><p class="text-sm text-slate-400 mt-2 leading-6">Animation, AI image/video generation, audio and digital media creation.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="max-w-7xl mx-auto px-5 py-20">
+        <div class="reveal"><p class="mono text-xs text-amber-300 tracking-[.2em]">03 / PROJECTS</p><h2 class="display text-3xl sm:text-4xl font-bold mt-3">Things I've been building</h2><p class="text-slate-400 mt-3">A selection of learning projects and experiments. This section can grow as new work is completed.</p></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-9">
+          <article class="glass card rounded-2xl p-6 reveal"><span class="mono text-[10px] text-amber-300">COMPUTER VISION</span><h3 class="display text-xl font-semibold mt-3">Hand Gesture Display</h3><p class="text-sm text-slate-400 leading-6 mt-3">An experiment in detecting raised fingers through a camera and translating gestures into displayed numbers.</p><p class="text-xs text-slate-500 mt-5">Python · OpenCV concepts · 7-segment display</p></article>
+          <article class="glass card rounded-2xl p-6 reveal"><span class="mono text-[10px] text-amber-300">PYTHON PROJECT</span><h3 class="display text-xl font-semibold mt-3">Jarvis Voice Assistant</h3><p class="text-sm text-slate-400 leading-6 mt-3">A personal assistant experiment exploring voice interaction, text-to-speech and desktop automation.</p><p class="text-xs text-slate-500 mt-5">Python · Text-to-speech · Audio</p></article>
+          <article class="glass card rounded-2xl p-6 reveal"><span class="mono text-[10px] text-amber-300">CREATIVE CODING</span><h3 class="display text-xl font-semibold mt-3">Interactive Python Games</h3><p class="text-sm text-slate-400 leading-6 mt-3">Small interactive game projects created to practise logic, event handling and graphical programming.</p><p class="text-xs text-slate-500 mt-5">Python · Pygame</p></article>
+        </div>
+        <p class="mono text-[10px] text-slate-600 mt-5">Project descriptions are based on experiments discussed; add repository links when ready.</p>
+      </section>
+
+      <section id="journey" class="bg-[#071022]/65 border-y border-amber-300/10">
+        <div class="max-w-7xl mx-auto px-5 py-20">
+          <div class="reveal"><p class="mono text-xs text-amber-300 tracking-[.2em]">04 / MY JOURNEY</p><h2 class="display text-3xl sm:text-4xl font-bold mt-3">Learning by creating.</h2></div>
+          <div class="mt-9 space-y-4">
+            <div class="glass rounded-xl p-6 flex gap-5 reveal"><div class="mono text-amber-300 text-sm">2026–30</div><div><h3 class="font-semibold">B.Tech — Artificial Intelligence &amp; Data Science</h3><p class="text-sm text-slate-400 mt-1">Viswajyothi College of Engineering and Technology, Kerala.</p></div></div>
+            <div class="glass rounded-xl p-6 flex gap-5 reveal"><div class="mono text-amber-300 text-sm">ONGOING</div><div><h3 class="font-semibold">Building a technology portfolio</h3><p class="text-sm text-slate-400 mt-1">Exploring GenAI, Blender, web development, UI/UX, creative design and open-source learning.</p></div></div>
+            <div class="glass rounded-xl p-6 flex gap-5 reveal"><div class="mono text-amber-300 text-sm">GOAL</div><div><h3 class="font-semibold">AI + Robotics + Creative Studio</h3><p class="text-sm text-slate-400 mt-1">Working towards building useful intelligent systems and creative technology experiences.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="max-w-7xl mx-auto px-5 py-20">
+        <div class="glass rounded-3xl p-8 sm:p-12 text-center reveal">
+          <p class="mono text-xs text-amber-300 tracking-[.2em]">05 / CONTACT &amp; SOCIALS</p>
+          <h2 class="display text-3xl sm:text-5xl font-bold mt-4">Let's build <span class="gold-text">something.</span></h2>
+          <p class="text-slate-400 max-w-xl mx-auto mt-5 leading-7">I'm interested in learning, collaborating and connecting with people who enjoy technology and creativity.</p>
+          <div class="flex flex-wrap justify-center gap-3 mt-8">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/criswin-v-geo-1a49b9429/" class="rounded-lg border border-amber-300/35 px-5 py-3 text-sm hover:bg-amber-300/10">LinkedIn ↗</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/criswinvgeo" class="rounded-lg border border-amber-300/35 px-5 py-3 text-sm hover:bg-amber-300/10">GitHub ↗</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@criswinvgeo5755" class="rounded-lg border border-amber-300/35 px-5 py-3 text-sm hover:bg-amber-300/10">YouTube ↗</a>
+          </div>
+          <p class="mono text-xs text-slate-500 mt-8">ERNAKULAM · KERALA · INDIA</p>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-slate-800 px-5 py-7 text-center text-xs text-slate-500">
+      <p>© <span id="year"></span> Criswin V Geo · Designed with curiosity and code.</p>
+      <a href="#home" class="inline-block mt-3 text-amber-300 hover:text-amber-200">Back to top ↑</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target);} }), {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');let w,h,pts=[];
+    function resize(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;pts=Array.from({length:45},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.5+.4}));}
+    function draw(){ctx.clearRect(0,0,w,h);pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(228,188,84,.55)';ctx.fill();});requestAnimationFrame(draw);}
+    if(!matchMedia('(prefers-reduced-motion: reduce)').matches){resize();draw();addEventListener('resize',resize);}
+  </script>
+</body>
+</html>
